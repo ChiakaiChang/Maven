@@ -29,7 +29,7 @@ public class WelcomeController {
 	public String index(Map<String, Object> model) {
 
 		logger.debug("index() is executed!");
-
+		throw new Exception("test");
 		model.pust("title", helloWorldService.getTitle(""));
 		model.put("msg", helloWorldService.getDesc());
 		
